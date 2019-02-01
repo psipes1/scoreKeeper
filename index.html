@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Score Keeper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="main-header mt-4">
+      <span id="p1Display">0</span> : <span id="p2Display">0</span>
+    </h1>
+    <h2 class="main-header">
+      Winning Point: <span id="scoreSet" class="text-primary">5</span>
+    </h2>
+    <br />
+    <div class="d-flex justify-content-center">
+      <div class="col-lg-3 text-center">
+        <div class="form-group">
+          <label>
+            Point Controller:
+            <input
+              class="form-control"
+              placeholder="Winning point value..."
+              id="input1"
+              type="number"
+            />
+          </label>
+        </div>
+        <button class="btn btn-primary" id="p1">Player 1</button>
+        <button class="btn btn-success" id="p2">Player 2</button>
+        <button class="btn btn-warning" id="reset">Reset</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
