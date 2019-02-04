@@ -18,32 +18,60 @@
     />
   </head>
   <body>
-    <h1 class="main-header mt-4">
-      <span id="p1Display">0</span> : <span id="p2Display">0</span>
-    </h1>
-    <h2 class="main-header">
-      Winning Point: <span id="scoreSet" class="text-primary">5</span>
-    </h2>
-    <br />
-    <div class="d-flex justify-content-center">
-      <div class="col-lg-3 text-center">
-        <div class="form-group">
-          <label>
-            Point Controller:
-            <input
-              class="form-control"
-              placeholder="Winning point value..."
-              id="input1"
-              type="number"
-            />
-          </label>
+    <div class="container">
+        <br>
+        <br>
+        <div id="p1congrats" class="d-none">
+          <h2 class="text-success">Player 1 Wins!!!</h2>
         </div>
-        <button class="btn btn-primary" id="p1">Player 1</button>
-        <button class="btn btn-success" id="p2">Player 2</button>
-        <button class="btn btn-warning" id="reset">Reset</button>
+      </div>
+      <div id="p2congrats" class="d-none">
+        <h2 class="text-success">Player 2 Wins!!!</h2>
       </div>
     </div>
+      <h1 class="main-header mt-4">
+        <span id="p1Display">0</span> : <span id="p2Display">0</span>
+      </h1>
+      <h2 class="main-header">
+        Winning Point: <span id="scoreSet" class="text-primary">5</span>
+      </h2>
+      <br />
+      <div class="d-flex justify-content-center">
+        <div class="col-lg-3 text-center">
+          <div class="form-group">
+            <label>
+              Point Controller:
+              <input
+                class="form-control"
+                placeholder="Winning point value..."
+                id="input1"
+                type="number"
+              />
+            </label>
+          </div>
 
+          <button class="btn btn-primary" id="p1">Player 1</button>
+          <button class="btn btn-success" id="p2">Player 2</button>
+          <button class="btn btn-warning" id="reset">Reset</button>
+        </div>
+      </div>
+      
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
   </body>
 </html>

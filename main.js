@@ -9,13 +9,15 @@ var winningScoreDisplay = document.getElementById("scoreSet"); //shows number th
 var p1Score = 0; //Player 1 starting score
 var p2Score = 0; //Player 2 starting score
 var winningScore = 5; //Arbitrary default score value, could be anything
-
+var p1Congrats = document.getElementById("p1congrats");
+var p2Congrats = document.getElementById("p2congrats");
 // Adds one to Player 1 score, until it reaches winning score
 p1Btn.addEventListener("click", function() {
   if (!gameOver) {
     p1Score++;
     if (p1Score === winningScore) {
       p1Display.classList.add("text-success");
+      p1Congrats.classList.remove("d-none");
       gameOver = true;
     }
     p1Display.textContent = p1Score;
@@ -27,6 +29,7 @@ p2Btn.addEventListener("click", function() {
     p2Score++;
     if (p2Score === winningScore) {
       p2Display.classList.add("text-success");
+      p2Congrats.classList.remove("d-none");
       gameOver = true;
     }
     p2Display.textContent = p2Score;
@@ -42,6 +45,8 @@ resetButton.addEventListener("click", function() {
 function reset() {
   p1Score = 0;
   p2Score = 0;
+  p1Congrats.classList.add("d-none");
+  p2Congrats.classList.add("d-none");
   p1Display.textContent = 0;
   p2Display.textContent = 0;
   p1Display.classList.remove("text-success");
